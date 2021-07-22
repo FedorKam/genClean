@@ -349,6 +349,10 @@
     bottom: 76px;
 }
 
+.work__nav::selection, .gallery__nav::selection{
+    background: transparent;
+}
+
 .work__navArrow, .gallery__navArrow{
     display: inline-flex;
     align-items: center;
@@ -392,9 +396,17 @@
     color: #777777;
 }
 
+.work__navNum::selection, .gallery__navNum::selection{
+    background: transparent;
+}
+
 .work__navNow, .gallery__navNow{
     color: #FFF;
     font-size: 16px;
+}
+
+.work__navNow::selection, .gallery__navNow::selection{
+    background: transparent;
 }
 
 .gallery__navNow{
