@@ -344,12 +344,12 @@
     z-index: 100;
 }
 
-.work__nav{
+.work__nav, .gallery__nav{
     position: absolute;
     bottom: 76px;
 }
 
-.work__navArrow{
+.work__navArrow, .gallery__navArrow{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -357,39 +357,48 @@
     height: 35px;
     border-radius: 50px;
     background-color: #FFF;
+    cursor: pointer;
 }
 
-.work__navArrow_left{
+.gallery__navArrow{
+    background-color: #F2F2F2;
+}
+
+.work__navArrow_left, .gallery__navArrow_left{
     transform: rotate(180deg);
 }
 
-.work__navArrow_left:after{
+.work__navArrow_left:after, .gallery__navArrow_left:after{
     position: relative;
     top: -2px;
 }
 
-.work__navArrow_right:after{
+.work__navArrow_right:after, .gallery__navArrow_right:after{
     position: relative;
     top: -1px;
 }
 
-.work__navArrow_left_active:after, .work__navArrow_right_active:after{
+.work__navArrow_left:after, .work__navArrow_right:after, .gallery__navArrow_left:after, .gallery__navArrow_right:after{
     content: url(../images/arrow_right_blue2.svg);
 }
 
-.work__navArrow_left_disabled:after, .work__navArrow_right_disabled:after{
+.work__navArrow_left_disabled:after, .work__navArrow_right_disabled:after, .gallery__navArrow_left_disabled:after, .gallery__navArrow_right_disabled:after{
     content: url(../images/arrow_right_dis.svg);
 }
 
-.work__navNum{
+.work__navNum, .gallery__navNum{
     padding: 0 44px;
     font-size: 14px;
     color: #777777;
 }
 
-.work__navNow{
+.work__navNow, .gallery__navNow{
     color: #FFF;
     font-size: 16px;
+}
+
+.gallery__navNow{
+    color: #171753;
 }
 
 .service{
@@ -422,6 +431,10 @@
 
 .service__gallery{
     padding-top: 44px;
+}
+
+.gallery__nav{
+    display: none;
 }
 
 .gallery__item{
@@ -947,7 +960,7 @@ textarea::placeholder{
         border-radius: 6px;
     }
     
-    .work__nav{
+    .work__nav, .gallery__nav{
         bottom: 59px;
         left: 50%;
         margin-right: -50%;
@@ -998,6 +1011,11 @@ textarea::placeholder{
     .gallery__img{
         height: 225px;
         width: 328px;
+    }
+
+    .gallery__nav{
+        display: block;
+        bottom: -140px;
     }
 
     .quote{
